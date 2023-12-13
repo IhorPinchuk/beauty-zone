@@ -17,19 +17,21 @@
     <header class="header">
       <div class="header__container">
         <nav class="header__nav">
-          <a href="./index.html" class="logo">Beauty Zone</a>
+          <a href="./index.html" lang="en" class="logo">beauty zone</a>
           <ul class="menu">
             <li class="menu__item">
-              <a href="#" class="menu__link">Про нас</a>
+              <a href="#reincarnate-section" class="menu__link menu__link-current">Про нас</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Чому ми</a>
+              <a href="#advantages-section" class="menu__link">Чому ми</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Наші процедури</a>
+              <a href="#procedures-section" class="menu__link"
+                >Наші процедури</a
+              >
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Контакти</a>
+              <a href="#contacts-section" class="menu__link">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -59,17 +61,17 @@
       <section class="hero">
         <div class="container">
           <p class="hero__text-cosmetology">Косметологічна клініка</p>
-          <h1 class="hero__title">Beauty Zone</h1>
-          <button type="button" class="hero__btn">Замовити дзвінок</button>
+          <h1 lang="en" class="hero__title">beauty zone</h1>
+          <button type="button" class="btn hero__btn">Замовити дзвінок</button>
           <p class="hero__text-sign">
             Запишись та отримай безкоштовну консультацію нашого косметолога
           </p>
         </div>
       </section>
-      <section class="reincarnate">
+      <section class="reincarnate" id="reincarnate-section">
         <div class="container">
           <h2 class="section__title">
-            Перевтілюйтесь в<span class="section__title-secondary">
+            Перевтілюйтесь в<span lang="en" class="section__title-secondary text-capitalize">
               beauty zone!</span
             >
           </h2>
@@ -78,15 +80,33 @@
             догляду за шкірою обличчя та тіла.
           </p>
           <p class="reincarnate__text">
-            B<span class="reincarnate__text-bold"> beauty zone</span> ми
-            гарантуємо найвищі стандарти якості та приємний сервіс. Наші
+            B<span lang="en" class="reincarnate__text-bold"> beauty zone</span>
+            ми гарантуємо найвищі стандарти якості та приємний сервіс. Наші
             косметологічні процедури та препарати допоможуть вам підтримувати
             свою красу та молодість. з нами краса назавжди!
           </p>
-          <div class="reincarnate__img"></div>
+          <div class="reincarnate__img">
+            <img
+              src="./images/to-procedure.jpg"
+              alt="Обличчя дівчини до проведеної процедури"
+            />
+            <img
+              src="./images/after-procedure.jpg"
+              alt="Обличчя дівчини після проведеної процедури"
+            />
+            <svg width="64" height="64" class="header__contacts-icon">
+              <use href="./images/sprite.svg#icon-star_1"></use>
+            </svg>
+            <svg width="40" height="40" class="header__contacts-icon">
+              <use href="./images/sprite.svg#icon-star_2"></use>
+            </svg>
+            <svg width="16" height="16" class="header__contacts-icon">
+              <use href="./images/sprite.svg#icon-star_3"></use>
+            </svg>
+          </div>
         </div>
       </section>
-      <section class="advantages">
+      <section class="advantages" id="advantages-section">
         <div class="container">
           <h2 class="section__title">
             Чому люди<span class="section__title-secondary"> обирають нас</span>
@@ -124,44 +144,50 @@
           </ul>
         </div>
       </section>
-      <section class="procedures">
+      <section class="procedures" id="procedures-section">
         <div class="container">
           <h2 class="section__title">
             Наші<span class="section__title-secondary"> процедури</span>
           </h2>
           <ul class="procedures__list">
             <li class="procedures__item">
-              <img
-                class="procedures__img"
-                src="./images/1_mask.jpg"
-                alt="Дівчині роблять маску для обличчя"
-                width="344"
-              />
-              <p class="procedures__text">Маски для обличчя</p>
+              <article>
+                <img
+                  class="procedures__img"
+                  src="./images/1_mask.jpg"
+                  alt="Дівчині роблять маску для обличчя"
+                  width="344"
+                />
+                <p class="procedures__text">Маски для обличчя</p>
+              </article>
             </li>
             <li class="procedures__item">
-              <img
-                class="procedures__img"
-                src="./images/2_injection.jpg"
-                alt="Дівчині проводять ін'єкцію на обличчі"
-                width="344"
-              />
-              <p class="procedures__text">Ін'єкції для обличчя</p>
+              <article>
+                <img
+                  class="procedures__img"
+                  src="./images/2_injection.jpg"
+                  alt="Дівчині проводять ін'єкцію на обличчі"
+                  width="344"
+                />
+                <p class="procedures__text">Ін'єкції для обличчя</p>
+              </article>
             </li>
             <li class="procedures__item">
-              <img
-                class="procedures__img"
-                src="./images/3_cleansing.jpg"
-                alt="Дівчині проводять очищення 
+              <article>
+                <img
+                  class="procedures__img"
+                  src="./images/3_cleansing.jpg"
+                  alt="Дівчині проводять очищення 
             обличчя"
-                width="344"
-              />
-              <p class="procedures__text">Очищення обличчя</p>
+                  width="344"
+                />
+                <p class="procedures__text">Очищення обличчя</p>
+              </article>
             </li>
           </ul>
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts" id="contacts-section">
         <div class="container">
           <h2 class="section__title">
             Як нас<span class="section__title-secondary"> знайти</span>
@@ -170,7 +196,6 @@
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9408873773036!2d30.515351675064625!3d50.44220171503499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C7LiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQviwgNSwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1701983577954!5m2!1sru!2sua"
             width="605"
             height="481"
-            style="border: 0"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
@@ -212,7 +237,7 @@
                 required
                 class="record__form-input"
               />
-              <button type="submit" class="record__form-btn">
+              <button type="submit" class="btn record__form-btn">
                 Записатись безкоштовно
               </button>
               <p class="record__form-text-policy">
@@ -225,72 +250,76 @@
           </div>
         </div>
       </section>
-      <footer class="footer">
-        <div class="container">
-          <nav class="footer__nav">
-            <a href="./index.html" class="logo">Beauty Zone</a>
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a href="#" class="menu__link">Про нас</a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">Чому ми</a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">Наші процедури</a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">Контакти</a>
-              </li>
-            </ul>
-          </nav>
-          <address class="address">
-            <ul class="address__list">
-              <li class="address__item">
-                <a class="address__contact" href="tel:+380960000007"
-                  >+ 38 (096) 000 00 07</a
-                >
-              </li>
-              <li class="address__item">
-                <a class="address__contact" href="mailto:beautyzone@gmail.com"
-                  >beautyzone@gmail.com</a
-                >
-              </li>
-              <li class="address__item">
-                <a
-                  class="address__link"
-                  href="https://maps.app.goo.gl/vX4UEbTydYDK27J68"
-                  target="_blank"
-                  rel="noreferrer noopener nofollow"
-                  >Україна, м. Київ, вул. Тараса Шевченка 5</a
-                >
-              </li>
-            </ul>
-            <ul class="footer__contacts-list">
-              <li class="footer__contacts-item">
-                <a href="#" target="_blank" class="footer__contacts-link"
-                  ><svg width="42" height="42" class="footer__contacts-icon">
-                    <use href="./images/sprite.svg#icon-telephone"></use></svg
-                ></a>
-              </li>
-              <li class="footer__contacts-item">
-                <a href="#" target="_blank" class="footer__contacts-link"
-                  ><svg width="42" height="42" class="footer__contacts-icon">
-                    <use href="./images/sprite.svg#icon-facebook"></use></svg
-                ></a>
-              </li>
-              <li class="footer__contacts-item">
-                <a href="#" target="_blank" class="footer__contacts-link"
-                  ><svg width="42" height="42" class="footer__contacts-icon">
-                    <use href="./images/sprite.svg#icon-instagram"></use></svg
-                ></a>
-              </li>
-            </ul>
-          </address>
-          <p class="footer__text-policy">Політика конфіденційності</p>
-          <p class="footer__text-warning">&#169; 2022 Дані захищені</p>
-        </div>
-      </footer>
     </main>
+    <footer class="footer">
+      <div class="container">
+        <nav class="footer__nav">
+          <a href="./index.html" lang="en" class="logo">beauty zone</a>
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="#reincarnate-section" class="menu__link footer__menu-link">Про нас</a>
+            </li>
+            <li class="menu__item">
+              <a href="#advantages-section" class="menu__link footer__menu-link">Чому ми</a>
+            </li>
+            <li class="menu__item">
+              <a href="#procedures-section" class="menu__link footer__menu-link"
+                >Наші процедури</a
+              >
+            </li>
+            <li class="menu__item">
+              <a href="#contacts-section" class="menu__link footer__menu-link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="address">
+          <ul class="address__list">
+            <li class="address__item">
+              <a class="address__link" href="tel:+380960000007"
+                >+ 38 (096) 000 00 07</a
+              >
+            </li>
+            <li class="address__item">
+              <a class="address__link" href="mailto:beautyzone@gmail.com"
+                >beautyzone@gmail.com</a
+              >
+            </li>
+            <li class="address__item">
+              <a
+                class="address__link"
+                href="https://maps.app.goo.gl/vX4UEbTydYDK27J68"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+                >Україна, м. Київ, вул. Тараса Шевченка 5</a
+              >
+            </li>
+          </ul>
+          <ul class="footer__contacts-list">
+            <li class="footer__contacts-item">
+              <a href="#" target="_blank" class="footer__contacts-link"
+                ><svg width="42" height="42" class="footer__contacts-icon">
+                  <use href="./images/sprite.svg#icon-telephone"></use></svg
+              ></a>
+            </li>
+            <li class="footer__contacts-item">
+              <a href="#" target="_blank" class="footer__contacts-link"
+                ><svg width="42" height="42" class="footer__contacts-icon">
+                  <use href="./images/sprite.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="footer__contacts-item">
+              <a href="#" target="_blank" class="footer__contacts-link"
+                ><svg width="42" height="42" class="footer__contacts-icon">
+                  <use href="./images/sprite.svg#icon-instagram"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </address>
+        <a href="#" target="_blank" class="footer__text-policy"
+          >Політика конфіденційності</a
+        >
+        <p class="footer__text-warning">&copy; 2022 Дані захищені</p>
+      </div>
+    </footer>
   </body>
 </html>

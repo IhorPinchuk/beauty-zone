@@ -15,7 +15,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__container">
+      <div class="container header__container">
         <nav class="header__nav">
           <a href="./index.html" lang="en" class="logo">beauty zone</a>
           <ul class="menu">
@@ -119,31 +119,31 @@
             Чому люди<span class="section__title-secondary"> обирають нас</span>
           </h2>
           <ul class="advantages__list">
-            <li class="advantages__item">
+            <li class="advantages__list-item">
               <svg width="48" height="48" class="advantages__list-icon">
                 <use href="./images/sprite.svg#icon-science"></use>
               </svg>
-              <p class="advantages__item-text">
+              <p class="advantages__list-text">
                 Всі наші косметологи мають вищу медичну освіту та стаж роботи
                 від 5 років
               </p>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__list-item">
               <svg width="48" height="48" class="advantages__list-icon">
                 <use
                   href="./images/sprite.svg#icon-medicinecosmeticsbottletreatment"
                 ></use>
               </svg>
-              <p class="advantages__item-text">
+              <p class="advantages__list-text">
                 Використовуємо тільки професійне обладнання та косметику,
                 перевірену часом
               </p>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__list-item">
               <svg width="48" height="48" class="advantages__list-icon">
                 <use href="./images/sprite.svg#icon-crown"></use>
               </svg>
-              <p class="advantages__item-text">
+              <p class="advantages__list-text">
                 Наша мета - підкреслити переваги та приховати недоліки, а не
                 переробити
               </p>
@@ -214,45 +214,54 @@
               >та отримайте подарунок
             </h3>
             <form class="record__form">
-              <label for="user-name" class="record__form-label"
-                >Ваше ім'я та прізвище</label
-              >
-              <input
-                type="text"
-                name="user-name"
-                id="user-name"
-                required
-                class="record__form-input"
-              />
-              <label for="user-tel" class="record__form-label"
-                >Ваш номер телефону</label
-              >
-              <input
-                type="tel"
-                name="user-tel"
-                id="user-tel"
-                required
-                class="record__form-input"
-              />
-              <label for="user-email" class="record__form-label"
-                >Ваша електронна пошта</label
-              >
-              <input
-                type="email"
-                name="user-email"
-                id="user-email"
-                required
-                class="record__form-input"
-              />
+              <div class="record__form-field">
+                <label for="user-name" class="record__form-label"
+                  >Ваше ім'я та прізвище</label
+                >
+                <input
+                  type="text"
+                  name="user-name"
+                  id="user-name"
+                  required
+                  class="record__form-input"
+                />
+              </div>
+              <div class="record__form-field">
+                <label for="user-tel" class="record__form-label"
+                  >Ваш номер телефону</label
+                >
+                <input
+                  type="tel"
+                  name="user-tel"
+                  id="user-tel"
+                  required
+                  class="record__form-input"
+                />
+              </div>
+              <div class="record__form-field">
+                <label for="user-email" class="record__form-label"
+                  >Ваша електронна пошта</label
+                >
+                <input
+                  type="email"
+                  name="user-email"
+                  id="user-email"
+                  required
+                  class="record__form-input"
+                />
+              </div>
               <button type="submit" class="btn record__form-btn">
                 Записатись безкоштовно
               </button>
               <p class="record__form-text-policy">
-                Натискаючи на кнопку я погоджуюсь
+                Натискаючи на кнопку я погоджуюсь<a
+                  href="#"
+                  target="_blank"
+                  class="record__form-policy"
+                >
+                  з політикою конфіденційності</a
+                >
               </p>
-              <a href="#" target="_blank" class="record__form-policy"
-                >з політикою конфіденційності</a
-              >
             </form>
           </div>
         </div>
@@ -261,27 +270,27 @@
     <footer class="footer">
       <div class="container">
         <nav class="footer__nav">
-          <a href="./index.html" lang="en" class="logo">beauty zone</a>
-          <ul class="menu footer__menu">
-            <li class="menu__item">
+          <a href="./index.html" lang="en" class="logo footer__logo">beauty zone</a>
+          <ul class="footer__menu">
+            <li class="footer__menu-item">
               <a
                 href="#reincarnate-section"
-                class="menu__link footer__menu-link"
+                class="footer__menu-link"
                 >Про нас</a
               >
             </li>
-            <li class="menu__item">
-              <a href="#advantages-section" class="menu__link footer__menu-link"
+            <li class="footer__menu-item">
+              <a href="#advantages-section" class="footer__menu-link"
                 >Чому ми</a
               >
             </li>
-            <li class="menu__item">
-              <a href="#procedures-section" class="menu__link footer__menu-link"
+            <li class="footer__menu-item">
+              <a href="#procedures-section" class="footer__menu-link"
                 >Наші процедури</a
               >
             </li>
-            <li class="menu__item">
-              <a href="#contacts-section" class="menu__link footer__menu-link"
+            <li class="footer__menu-item">
+              <a href="#contacts-section" class="footer__menu-link"
                 >Контакти</a
               >
             </li>

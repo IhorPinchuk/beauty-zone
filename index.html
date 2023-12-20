@@ -192,7 +192,7 @@
                     width="344"
                     class="procedures__card-img"
                   />
-                  <p class="procedures__text">Маски<br>для обличчя</p>
+                  <p class="procedures__text">Маски<br />для обличчя</p>
                 </article>
               </li>
               <li class="procedures__item">
@@ -203,19 +203,19 @@
                     width="344"
                     class="procedures__card-img"
                   />
-                  <p class="procedures__text">Ін'єкції<br>для обличчя</p>
+                  <p class="procedures__text">Ін'єкції<br />для обличчя</p>
                 </article>
               </li>
               <li class="procedures__item">
                 <article class="procedures__card">
                   <img
-                  src="./images/cleansing.jpg"
+                    src="./images/cleansing.jpg"
                     alt="Дівчині проводять очищення 
             обличчя"
                     width="344"
                     class="procedures__card-img"
                   />
-                  <p class="procedures__text">Очищення<br>обличчя</p>
+                  <p class="procedures__text">Очищення<br />обличчя</p>
                 </article>
               </li>
             </ul>
@@ -248,42 +248,45 @@
                   безкоштовно </span
                 >та отримайте подарунок
               </h3>
-              <form class="record__form">
+              <form name="contact-form" autocomplete="off" class="record__form">
                 <div class="record__form-field">
+                  <input
+                  type="text"
+                  name="user-name"
+                  id="user-name"
+                  required
+                  class="record__form-input"
+                  placeholder=""
+                  />
                   <label for="user-name" class="record__form-label"
                     >Ваше ім'я та прізвище</label
                   >
-                  <input
-                    type="text"
-                    name="user-name"
-                    id="user-name"
-                    required
-                    class="record__form-input"
-                  />
                 </div>
                 <div class="record__form-field">
+                  <input
+                  type="tel"
+                  name="user-tel"
+                  id="user-tel"
+                  required
+                  class="record__form-input"
+                  placeholder=""
+                  />
                   <label for="user-tel" class="record__form-label"
                     >Ваш номер телефону</label
                   >
-                  <input
-                    type="tel"
-                    name="user-tel"
-                    id="user-tel"
-                    required
-                    class="record__form-input"
-                  />
                 </div>
                 <div class="record__form-field">
+                  <input
+                  type="email"
+                  name="user-email"
+                  id="user-email"
+                  required
+                  class="record__form-input"
+                  placeholder=""
+                  />
                   <label for="user-email" class="record__form-label"
                     >Ваша електронна пошта</label
                   >
-                  <input
-                    type="email"
-                    name="user-email"
-                    id="user-email"
-                    required
-                    class="record__form-input"
-                  />
                 </div>
                 <button type="submit" class="btn record__form-btn">
                   Записатись безкоштовно
@@ -390,13 +393,68 @@
       </div>
     </footer>
 
-    <div class="backdrop is-hidden">
+    <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal__btn-close modal-btn-close">
           <svg width="32" height="32" class="modal__btn-close-icon">
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
+        <h2 class="modal__title">Замовити дзвінок</h2>
+        <p class="modal__text">
+          Запишіться<span class="modal__text-secondary"> безкоштовно </span>та
+          отримайте подарунок
+        </p>
+        <form name="modal-contact-form" autocomplete="off">
+          <div class="modal__form-field">
+            <input
+            class="modal__input"
+            type="text"
+            id="modal-user-name"
+            name="modal-user-name"
+            placeholder=""
+            />
+            <label class="modal__label" for="modal-user-name"
+              >Ваше ім'я та прізвище</label
+            >
+          </div>
+          <div class="modal__form-field">
+            <input
+            class="modal__input"
+            type="tel"
+            id="modal-user-tel"
+            name="modal-user-tel"
+            placeholder=""
+            />
+            <label class="modal__label" for="modal-user-tel"
+              >Ваш номер телефону</label
+            >
+          </div>
+          <div class="modal__form-field">
+            <input
+            class="modal__input"
+            type="email"
+            id="modal-user-email"
+            name="modal-user-email"
+            placeholder=""
+            />
+            <label class="modal__label" for="modal-user-email"
+              >Ваша електронна пошта</label
+            >
+          </div>
+          <button type="submit" class="btn modal__form-btn">
+            Записатись безкоштовно
+          </button>
+          <p class="modal__form-text-policy">
+            Натискаючи на кнопку я погоджуюсь<a
+              href="#"
+              target="_blank"
+              class="modal__form-policy"
+            >
+              з політикою конфіденційності</a
+            >
+          </p>
+        </form>
       </div>
     </div>
 

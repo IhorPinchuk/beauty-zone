@@ -69,7 +69,7 @@
           <div class="hero__wrapper">
             <p class="hero__text-cosmetology">Косметологічна клініка</p>
             <h1 lang="en" class="hero__title">beauty zone</h1>
-            <button type="button" class="btn hero__btn">
+            <button type="button" class="btn hero__btn modal-btn-open">
               Замовити дзвінок
             </button>
             <p class="hero__text-sign">
@@ -121,13 +121,13 @@
                   />
                 </li>
               </ul>
-              <svg width="64" height="64" class="header__contacts-icon">
+              <svg width="64" height="64" class="reincarnate__star-big">
                 <use href="./images/sprite.svg#icon-star_1"></use>
               </svg>
-              <svg width="40" height="40" class="header__contacts-icon">
+              <svg width="40" height="40" class="reincarnate__star-medium">
                 <use href="./images/sprite.svg#icon-star_2"></use>
               </svg>
-              <svg width="16" height="16" class="header__contacts-icon">
+              <svg width="16" height="16" class="reincarnate__star-small">
                 <use href="./images/sprite.svg#icon-star_3"></use>
               </svg>
             </div>
@@ -192,34 +192,34 @@
                     width="344"
                     class="procedures__card-img"
                   />
-                  <p class="procedures__text">Маски для обличчя</p>
+                  <p class="procedures__text">Маски<br>для обличчя</p>
                 </article>
               </li>
               <li class="procedures__item">
-                <article>
+                <article class="procedures__card">
                   <img
                     src="./images/injection.jpg"
                     alt="Дівчині проводять ін'єкцію на обличчі"
                     width="344"
                     class="procedures__card-img"
                   />
-                  <p class="procedures__text">Ін'єкції для обличчя</p>
+                  <p class="procedures__text">Ін'єкції<br>для обличчя</p>
                 </article>
               </li>
               <li class="procedures__item">
-                <article>
+                <article class="procedures__card">
                   <img
-                    src="./images/cleansing.jpg"
+                  src="./images/cleansing.jpg"
                     alt="Дівчині проводять очищення 
             обличчя"
                     width="344"
                     class="procedures__card-img"
                   />
-                  <p class="procedures__text">Очищення обличчя</p>
+                  <p class="procedures__text">Очищення<br>обличчя</p>
                 </article>
               </li>
             </ul>
-            <button type="button" class="procedures__carousel-btn">
+            <button type="button" class="procedures__carousel-btn next">
               <svg width="16" height="16" class="procedures__carousel-icon">
                 <use href="./images/sprite.svg#icon-arrow"></use>
               </svg>
@@ -308,10 +308,10 @@
         <div class="footer__container-wrapper">
           <nav class="footer__nav">
             <div>
-            <a href="./index.html" lang="en" class="logo footer__logo"
-              >beauty zone</a
-            >
-          </div>
+              <a href="./index.html" lang="en" class="logo footer__logo"
+                >beauty zone</a
+              >
+            </div>
             <ul class="footer__menu">
               <li class="footer__menu-item">
                 <a href="#reincarnate-section" class="footer__menu-link"
@@ -389,5 +389,17 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button type="button" class="modal__btn-close modal-btn-close">
+          <svg width="32" height="32" class="modal__btn-close-icon">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>

@@ -1,60 +1,59 @@
 .reincarnate {
-    padding-bottom: 88px;
-  }
-  
-  .reincarnate__wrapper {
+  padding-bottom: 88px;
+
+  &__wrapper {
     display: flex;
     justify-content: space-between;
     gap: 28px;
   }
-  
-  .reincarnate__wrapper-text {
+
+  &__wrapper-text {
     max-width: 709px;
   }
-  
-  .reincarnate__title {
+
+  &__title {
     max-width: 529px;
     padding-top: 39.66px;
   }
-  
-  .reincarnate__text {
+
+  &__text {
     margin-bottom: 40px;
     font-size: 22px;
     line-height: calc(38 / 22);
   }
-  
-  .reincarnate__text-width {
+
+  &__text-width {
     max-width: 650px;
   }
-  
-  .reincarnate__text-bold {
+
+  &__text-bold {
     font-weight: 600;
     text-transform: capitalize;
   }
-  
-  .reincarnate__img {
+
+  &__img {
     position: relative;
     flex-grow: 1;
   }
-  
-  .reincarnate__img-list {
+
+  &__img-list {
     display: flex;
     flex-direction: column;
     gap: 40px;
     /* float: right; */
   }
-  
-  .reincarnate__img-item {
+
+  &__img-item {
     float: right;
   }
-  
-  .reincarnate__img-img {
+
+  &__img-img {
     width: 335px;
     height: 328px;
     border-radius: 50%;
   }
-  
-  .reincarnate__star-big {
+
+  &__star-big {
     position: absolute;
     top: 335px;
     right: 395px;
@@ -62,7 +61,7 @@
     animation: rotate-big var(--animation-star);
     transition: transform var(--animation-star);
   }
-  
+
   @keyframes rotate-big {
     0% {
       transform: rotate(0deg);
@@ -76,14 +75,14 @@
       transform: rotate(0deg);
     }
   }
-  
-  .reincarnate__star-big:hover {
+
+  &__star-big:hover {
     transform: rotateZ(360deg);
     scale: 1.5;
     fill: var(--star-medium-bg-color);
   }
-  
-  .reincarnate__star-medium {
+
+  &__star-medium {
     position: absolute;
     top: 32px;
     right: -10px;
@@ -91,7 +90,7 @@
     animation: rotate-medium var(--animation-star);
     transition: transform var(--animation-star);
   }
-  
+
   @keyframes rotate-medium {
     0% {
       transform: rotate(0deg);
@@ -105,14 +104,14 @@
       transform: rotate(0deg);
     }
   }
-  
-  .reincarnate__star-medium:hover {
+
+  &__star-medium:hover {
     transform: rotateZ(-360deg);
     scale: 1.5;
     fill: var(--star-small-bg-color);
   }
-  
-  .reincarnate__star-small {
+
+  &__star-small {
     position: absolute;
     top: 269px;
     right: 10px;
@@ -120,7 +119,7 @@
     animation: rotate-small var(--animation-star);
     transition: transform var(--animation-star);
   }
-  
+
   @keyframes rotate-small {
     0% {
       transform: rotate(0deg);
@@ -134,9 +133,10 @@
       transform: rotate(0deg);
     }
   }
-  
-  .reincarnate__star-small:hover {
+
+  &__star-small:hover {
     transform: rotateZ(-360deg);
     scale: 1.5;
     fill: var(--star-big-bg-color);
   }
+}

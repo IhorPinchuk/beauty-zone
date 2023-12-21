@@ -1,0 +1,49 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.25);
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &__contacts-list {
+    display: none;
+
+    @media screen and (min-width: 480px) {
+      display: flex;
+      gap: 32px;
+    }
+  }
+
+  &__contacts-item {
+    width: 32px;
+    height: 106px;
+  }
+
+  &__contacts-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__contacts-link:hover &__contacts-icon,
+  &__contacts-link:focus &__contacts-icon {
+    fill: var(--accent-text-color);
+  }
+
+  &__contacts-icon {
+    fill: var(--soc-icon-color);
+    transition: fill var(--animation);
+  }
+}

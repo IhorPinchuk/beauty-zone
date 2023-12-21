@@ -1,0 +1,30 @@
+.menu {
+    display: none;
+  
+    &__link {
+      padding-top: 42.5px;
+      padding-bottom: 42.5px;
+      font-size: 18px;
+      line-height: 1.2;
+      text-decoration: none;
+      color: var(--primary-text-color);
+      transition: color var(--animation);
+    }
+  
+    &__link:hover,
+    &__link:focus {
+      color: var(--accent-text-color);
+    }
+  
+    &__link-current {
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--accent-text-color);
+    }
+  
+    @media screen and (min-width: 480px) {    
+        display: flex;
+        gap: 56px;
+        margin-right: 240px;    
+    }
+  }

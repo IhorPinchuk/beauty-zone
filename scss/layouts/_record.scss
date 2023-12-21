@@ -1,0 +1,93 @@
+.record {
+  background-color: var(--secondary-bg-color);
+  background-image: url(../images/record-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  padding: 48px 56px;
+  max-width: 423px;
+  border-radius: 32px;
+
+  &__title {
+    margin-bottom: 32px;
+    color: var(--secondary-text-color);
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.2;
+    max-width: 300px;
+  }
+
+  &__title-secondary {
+    color: var(--accent-text-color);
+  }
+
+  &__form-field {
+    position: relative;
+    margin-bottom: 16px;
+  }
+
+  &__form-input {
+    width: 100%;
+    border-radius: 32px;
+    border: 2px solid var(--input-border-color);
+    font-size: 13px;
+    line-height: 1.2;
+    padding: 18px 32.85px;
+    color: var(--input-text-color);
+    background-color: transparent;
+    outline: transparent;
+    cursor: pointer;
+    transition: background-color var(--animation);
+  }
+
+  &__form-input:hover,
+  &__form-input:focus {
+    background-color: var(--input-bg-hover);
+  }
+
+  &__form-label {
+    position: absolute;
+    left: 32.85px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--secondary-text-color);
+    font-size: 13px;
+    line-height: 1.2;
+  }
+
+  &__form-input:hover + &__form-label,
+  &__form-input:focus + &__form-label {
+    transform: translateY(-280%);
+  }
+
+  &__form-input:not(:placeholder-shown) + &__form-label {
+    transform: translateY(-280%);
+  }
+
+  &__form-btn {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 8px;
+  }
+
+  &__form-btn:hover,
+  &__form-btn:focus {
+    color: var(--btn-text-color);
+  }
+
+  &__form-text-policy,
+  &__form-policy {
+    max-width: 205px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 12px;
+    line-height: calc(18 / 12);
+    text-align: center;
+    color: var(--info-text-color);
+    text-underline-offset: 2px;
+  }
+}

@@ -1,0 +1,19 @@
+.contacts {
+  padding-top: 48px;
+  padding-bottom: 94px;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  &__map {
+    border: transparent;
+    border-radius: 32px;
+  }
+}

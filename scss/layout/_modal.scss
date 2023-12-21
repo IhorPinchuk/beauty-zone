@@ -1,0 +1,187 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 20px 0;
+    background-color: var(--backdrop-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity var(--animation), visibility var(--animation);
+  }
+  
+  .backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  
+  .modal {
+    position: relative;
+    padding: 42px 144px;
+    width: 100%;
+    height: 100%;
+    max-width: 723px;
+    max-height: 680px;
+    background-color: var(--secondary-bg-color);
+    background-image: url(../images/record-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    border-radius: 48px;
+    transition: transform var(--animation);
+    overflow-y: auto;
+  }
+  
+  .backdrop.is-hidden .modal {
+    transform: scale(1.5);
+  }
+  
+  .modal::-webkit-scrollbar {
+  width: 8px;
+  }
+  
+  .modal::-webkit-scrollbar-thumb {
+  background-color: #012458;
+  border-radius: 4px;
+  width: 50%;
+  }
+  
+  .modal::-webkit-scrollbar-track {
+    margin: 50px 10px;
+    background-color: var(--secondary-bg-color);
+    border-radius: 4px;
+    width: 50%;
+  }
+  
+  .modal__btn-close {
+    position: absolute;
+    top: 42px;
+    right: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+  }
+  
+  .modal__btn-close:hover {
+    scale: 1.1;
+  }
+  
+  .modal__btn-close-icon {
+    fill: var(--btn-text-color);
+    stroke: var(--btn-text-color);
+  }
+  
+  .modal__title {
+    margin-bottom: 40px;
+    font-family: 'Play', sans-serif;
+    font-size: 64px;
+    line-height: 1.2;
+    color: var(--secondary-text-color);
+    text-align: center;
+  }
+  
+  .modal__text {
+    max-width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 32px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--secondary-text-color);
+  }
+  
+  .modal__text-secondary {
+    color: var(--accent-text-color);
+  }
+  
+  .modal__form-field {
+    position: relative;
+    margin-bottom: 24px;
+  }
+  
+  .modal__input, .record__form-input {
+    width: 100%;
+    border-radius: 32px;
+    border: 2px solid var(--input-border-color);
+    font-size: 13px;
+    line-height: 1.2;
+    padding: 18px 32.85px;
+    color: var(--input-text-color);
+    background-color: transparent;
+    outline: transparent;
+    cursor: pointer;
+    transition: background-color var(--animation);
+  }
+  
+  .modal__input:hover,
+  .modal__input:focus,
+  .record__form-input:hover,
+  .record__form-input:focus {
+    background-color: var(--input-bg-hover);
+  }
+  
+  .modal__label,
+  .record__form-label {
+    position: absolute;
+    left: 32.85px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--secondary-text-color);
+    font-size: 13px;
+    line-height: 1.2;
+  }
+  
+  .modal__input:hover + .modal__label,
+  .modal__input:focus + .modal__label,
+  .record__form-input:hover + .record__form-label,
+  .record__form-input:focus + .record__form-label {
+    transform: translateY(-280%);
+  }
+  
+  .modal__input:not(:placeholder-shown) + .modal__label,
+  .record__form-input:not(:placeholder-shown) + .record__form-label {
+    transform: translateY(-280%);
+  }
+  
+  .modal__form-btn,
+  .record__form-btn {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 8px;
+  }
+  
+  .modal__form-btn:hover,
+  .modal__form-btn:focus,
+  .record__form-btn:hover,
+  .record__form-btn:focus {
+    color: var(--btn-text-color);
+  }
+  
+  .modal__form-text-policy,
+  .modal__form-policy,
+  .record__form-text-policy,
+  .record__form-policy {
+    max-width: 205px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 12px;
+    line-height: calc(18 / 12);
+    text-align: center;
+    color: var(--info-text-color);
+    text-underline-offset: 2px;
+  }

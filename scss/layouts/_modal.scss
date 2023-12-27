@@ -24,10 +24,10 @@
 
 .modal {
   position: relative;
-  padding: 42px 144px;
+  padding: 20px 20px;
   width: 100%;
   height: 100%;
-  max-width: 723px;
+  max-width: 310px;
   max-height: 680px;
   background-color: var(--secondary-bg-color);
   background-image: url(../images/record-bg.png);
@@ -36,9 +36,19 @@
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  border-radius: 48px;
+  border-radius: 24px;
   transition: transform var(--animation);
   overflow-y: auto;
+
+  @media screen and (min-width: $bp-mobile) {
+    max-width: 460px;
+  }
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 42px 144px;
+    max-width: 723px;
+    border-radius: 48px;
+  }
 
   &::-webkit-scrollbar {
     width: 8px;
@@ -59,8 +69,8 @@
 
   &__btn-close {
     position: absolute;
-    top: 42px;
-    right: 42px;
+    top: 10px;
+    right: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,6 +81,11 @@
     background-color: transparent;
     border: 1px solid transparent;
     cursor: pointer;
+
+    @media screen and (min-width: $bp-tablet) {
+      top: 42px;
+      right: 42px;
+    }
   }
 
   &__btn-close:hover {
@@ -85,10 +100,14 @@
   &__title {
     margin-bottom: 40px;
     font-family: 'Play', sans-serif;
-    font-size: 64px;
+    font-size: 40px;
     line-height: 1.2;
     color: var(--secondary-text-color);
     text-align: center;
+
+    @media screen and (min-width: $bp-mobile) {
+      font-size: 64px;
+    }
   }
 
   &__text {

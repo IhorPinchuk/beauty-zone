@@ -1,6 +1,18 @@
-.address__list {
-  margin-bottom: 16px;
+.address {
+  margin-bottom: 8px;
+
+  @media screen and (min-width: $bp-desktop) {
+    margin-bottom: 0;
+  } 
 }
+
+.address__list {
+display: none;
+  @media screen and (min-width: $bp-desktop) {
+    display: inline-block;
+    margin-bottom: 16px;
+  } 
+  }
 
 .address__item {
   margin-bottom: 16px;

@@ -7,25 +7,32 @@
 
   &__container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
   }
 
   &__nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-right: 240px;
+    }
   }
 
   &__contacts-list {
     display: none;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: $bp-desktop) {
       display: flex;
       gap: 32px;
     }
   }
 
   &__contacts-item {
-    width: 32px;
+    // width: 32px;
     height: 106px;
   }
 
@@ -45,5 +52,24 @@
   &__contacts-icon {
     fill: var(--soc-icon-color);
     transition: fill var(--animation);
+  }
+
+  &__burger-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    background-color: transparent;
+    border-color: transparent;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: none;
+    }
+  }
+
+  &__burger-btn-icon {
+    fill: var(--secondary-text-color);
   }
 }

@@ -2,13 +2,18 @@
     display: none;
   
     &__link {
-      padding-top: 42.5px;
-      padding-bottom: 42.5px;
+      padding-top: 15.72px;
+      padding-bottom: 15.72px;
       font-size: 18px;
       line-height: 1.2;
       text-decoration: none;
       color: var(--primary-text-color);
       transition: color var(--animation);
+
+      @media screen and (min-width: $bp-desktop) {
+        padding-top: 42.5px;
+      padding-bottom: 42.5px;
+      }
     }
   
     &__link:hover,
@@ -22,9 +27,12 @@
       color: var(--accent-text-color);
     }
   
-    @media screen and (min-width: 480px) {    
+    @media screen and (min-width: $bp-tablet) {    
         display: flex;
-        gap: 56px;
-        margin-right: 240px;    
+        gap: 20px;            
     }
+
+    @media screen and (min-width: $bp-desktop) {    
+      gap: 56px;            
+  }
   }

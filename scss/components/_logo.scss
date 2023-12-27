@@ -1,13 +1,19 @@
 .logo {
-    max-width: 74px;
+  display: inline-block;  
+  padding-top: 15.72px;
+  font-family: 'Play', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 0.9375;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: var(--accent-text-color);
+
+  @media screen and (min-width: $bp-desktop) {    
     padding-top: 32px;
     padding-bottom: 32px;
     margin-right: 240px;
-    font-family: 'Play', sans-serif;
     font-size: 22px;
-    font-weight: 700;
     line-height: 0.9545;
-    text-transform: capitalize;
-    text-decoration: none;
-    color: var(--accent-text-color);
   }
+}

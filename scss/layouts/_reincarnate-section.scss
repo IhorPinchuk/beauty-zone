@@ -1,29 +1,54 @@
 .reincarnate {
-  padding-bottom: 88px;
+  padding-bottom: 20px;
+  @media screen and (min-width: $bp-desktop) {
+    padding-bottom: 88px;
+  }
 
   &__wrapper {
-    display: flex;
-    justify-content: space-between;
-    gap: 28px;
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      justify-content: space-between;
+      gap: 28px;
+    }
   }
 
   &__wrapper-text {
-    max-width: 709px;
+    @media screen and (min-width: $bp-desktop) {
+      max-width: 709px;
+    }
   }
 
   &__title {
-    max-width: 529px;
-    padding-top: 39.66px;
+    max-width: 264px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 350px;
+      padding-top: 39.66px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      max-width: 529px;
+      padding-top: 39.66px;
+    }
   }
 
   &__text {
-    margin-bottom: 40px;
-    font-size: 22px;
-    line-height: calc(38 / 22);
+    font-size: 18px;
+    line-height: 1.2;
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 22px;
+      line-height: calc(38 / 22);
+    }
   }
 
   &__text-width {
-    max-width: 650px;
+    margin-bottom: 16px;
+    @media screen and (min-width: $bp-desktop) {
+      max-width: 650px;
+      margin-bottom: 40px;
+    }
   }
 
   &__text-bold {
@@ -37,10 +62,14 @@
   }
 
   &__img-list {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    /* float: right; */
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      /* float: right; */
+    }
   }
 
   &__img-item {
@@ -55,11 +84,18 @@
 
   &__star-big {
     position: absolute;
-    top: 335px;
-    right: 395px;
+    bottom: -46px;
+    right: 0;
     fill: var(--star-big-bg-color);
     animation: rotate-big var(--animation-star);
     transition: transform var(--animation-star);
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 64px;
+      height: 64px;
+      top: 335px;
+      right: 395px;
+    }
   }
 
   @keyframes rotate-big {
@@ -83,12 +119,22 @@
   }
 
   &__star-medium {
-    position: absolute;
-    top: 32px;
-    right: -10px;
-    fill: var(--star-medium-bg-color);
-    animation: rotate-medium var(--animation-star);
-    transition: transform var(--animation-star);
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+      position: absolute;
+      top: -110px;
+      right: 100px;
+      fill: var(--star-medium-bg-color);
+      animation: rotate-medium var(--animation-star);
+      transition: transform var(--animation-star);
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      top: 32px;
+      right: -10px;
+    }
   }
 
   @keyframes rotate-medium {
@@ -112,12 +158,22 @@
   }
 
   &__star-small {
-    position: absolute;
-    top: 269px;
-    right: 10px;
-    fill: var(--star-small-bg-color);
-    animation: rotate-small var(--animation-star);
-    transition: transform var(--animation-star);
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+      position: absolute;
+      top: -200px;
+      right: 100px;
+      fill: var(--star-small-bg-color);
+      animation: rotate-small var(--animation-star);
+      transition: transform var(--animation-star);
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      top: 269px;
+      right: 10px;
+    }
   }
 
   @keyframes rotate-small {

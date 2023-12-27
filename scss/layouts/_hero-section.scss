@@ -7,40 +7,86 @@
     -webkit-background-size: cover;
     -moz-background-size: cover;
     /* border-radius: 40px 20% / 20px 80%; */
-    padding-top: 122.52px;
-    padding-bottom: 126.81px;
+    padding-top: 70.72px;
+    padding-bottom: 56px;
     /* clip-path: polygon(0 0, 0 25%, 0 30%, 0 40%, 0 50%, 0 60%, 0 70%, 0 80%, 0 90%, 0 100%); */
 
+    @media screen and (min-width: $bp-desktop) {   
+      padding-top: 122.52px;
+    padding-bottom: 126.81px;
+  } 
+
     &__wrapper {
-      padding-left: 140px;
+      
+      @media screen and (min-width: $bp-desktop) {   
+        padding-left: 140px;
+    } 
     }
     
-    &__text-cosmetology {
-      font-size: 18px;
+    &__text-cosmetology {      
+font-size: 12px;
+line-height: 1.5;
+text-align: center;
+
+      @media screen and (min-width: $bp-desktop) {   
+        font-size: 18px;
       line-height: 1.2;
       margin-bottom: 16px;
+      text-align: start;
+    } 
     }
     
     &__title {
-      max-width: 529px;
+      text-align: center;
       font-family: 'Play', sans-serif;
-      font-size: 140px;
-      font-weight: 700;
-      line-height: 0.8143;
-      text-transform: capitalize;
-      color: var(--accent-text-color);
-      margin-bottom: 40px;
+font-size: 54px;
+font-weight: 700;
+line-height: 0.85185;
+text-transform: capitalize;
+        color: var(--accent-text-color);
+        margin-bottom: 32px;
+
+        @media screen and (min-width: $bp-tablet) {  
+          font-size: 100px;       
+          
+      }
+
+      @media screen and (min-width: $bp-desktop) {  
+        text-align: start; 
+        max-width: 529px;        
+        font-size: 140px;       
+        line-height: 0.8143;        
+        margin-bottom: 40px;
+    }
     }
     
     &__btn {
-      margin-bottom: 14px;
+      display: block;
+      margin-top: 0;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 8px;
+      
+      @media screen and (min-width: $bp-desktop) {  
+        margin-right: 0;
+      margin-left: 0;
+        margin-bottom: 14px;
+    }
     }
     
     &__text-sign {
-      font-size: 12px;
-      line-height: 1.5;
+      font-size: 11px;
+      line-height: 1.6364;
       max-width: 238px;
       text-align: center;
+      margin: 0 auto;
+
+      @media screen and (min-width: $bp-desktop) {  
+        font-size: 12px;
+      line-height: 1.5;
+      text-align: center;
+      margin: 0;
+    }
     }
   }
   

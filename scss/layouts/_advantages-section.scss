@@ -1,20 +1,35 @@
 .advantages {
-  padding-top: 88px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 88px;
   padding-bottom: 48px;
+  }
 
   &__title {
+    max-width: 230px;
+    text-align: center;
     margin-right: auto;
     margin-left: auto;
-    max-width: 450px;
-    text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {      
+      max-width: 350px;   
+      } 
+
+    @media screen and (min-width: $bp-desktop) {      
+    max-width: 450px;   
+    }    
   }
 
   &__list {
-    display: flex;
+    @media screen and (min-width: $bp-desktop) {      
+      display: flex;
     margin-right: auto;
     margin-left: auto;
     max-width: 1060px;
-    gap: 56px;
+    gap: 56px;  
+      }      
   }
 
   &__list-item {
@@ -22,8 +37,12 @@
     flex-direction: column;
     align-items: center;
     padding: 24px 32px;
-    width: calc((100% - 112px) / 3);
+    border: 1px solid var(--input-border-color);    
     border-radius: 32px;
+
+    @media screen and (min-width: $bp-desktop) {      
+      width: calc((100% - 112px) / 3); 
+      }   
   }
 
   &__list-icon {
@@ -32,10 +51,15 @@
   }
 
   &__list-text {
+    max-width: 252px;
     color: var(--advantages-text-color);
     /* text-align: center; */
     font-size: 18px;
     line-height: calc(24 / 18);
     text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {      
+      max-width: 100%; 
+      } 
   }
 }

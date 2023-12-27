@@ -2,11 +2,11 @@
   background-color: var(--btn-bg-color);
   color: var(--btn-text-color);
   border: 2px solid var(--btn-border-color);
-  border-radius: 32px;
-  font-size: 18px;
+  border-radius: 24px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 1.2;
-  padding: 16px 32px;
+  padding: 16px 24px;
   transition: background-color var(--animation), color var(--animation),
   border var(--animation);
 
@@ -15,4 +15,10 @@
     background-color: var(--btn-hover-bg-color);
     color: var(--btn-hover-text-color);
   }
+
+  @media screen and (min-width: $bp-desktop) {  
+    border-radius: 32px;
+  font-size: 18px;  
+  padding: 16px 32px;
+}
 }

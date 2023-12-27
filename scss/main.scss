@@ -2,10 +2,13 @@
 @import './utils/variables';
 @import './utils/utils';
 @import './_base';
+
 @import './components/container';
 @import './components/buttons';
 @import './components/section-title';
 @import './components/logo';
+@import './components/pagination';
+
 @import './layouts/mob-menu';
 @import './layouts/menu';
 @import './layouts/header';

@@ -1,0 +1,46 @@
+.section-bg-color {
+  position: relative;
+  
+  // clip-path: polygon(0 0, 0 25%, 0 30%, 0 40%, 0 50%, 0 60%, 0 70%, 0 80%, 0 90%, 0 100%);
+}
+
+.section-bg-color::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  // background-image: linear-gradient(
+  //   rgba(43, 127, 255, 0.2) 39.74%,
+  //   rgba(43, 127, 255, 0) 54.16%,
+  //   rgba(43, 127, 255, 0) 66.66%
+  // );
+background-image: url(../../images/section-bg-color-mob.png);
+background-repeat: no-repeat;
+background-size: cover;
+
+  @media screen and (min-width: $bp-mobile) {
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: $bp-tablet) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    max-width: 1272px;
+    transform: translate(-50%, -60%);
+    background-image: url(../../images/section-bg-color.png);
+  }
+
+  // height: 100px;
+  // background:
+  //   radial-gradient(circle, #fff 50px, transparent 50px) -75px -50px,
+  //   radial-gradient(circle, #05f 50px, transparent 50px) -25px 37px,
+  //   linear-gradient(#fff 45px, #05f 45px);
+  // background-size: 100px 100px;
+  // background-repeat: repeat-x;
+}
